@@ -1,7 +1,7 @@
 import { PATTERNLIKE_TYPES, whileStatement } from "@babel/types"
 import React from "react"
 import {View,StyleSheet} from 'react-native'
-
+import Ale from './components/Aleatorio'
 import MinMax from './components/MinMax'
 // import CompPadrao, { Comp1, Comp2 } from './components/Multi'
 // import Primeiro  from './components/Primeiro'
@@ -9,8 +9,10 @@ import MinMax from './components/MinMax'
 export default () =>
 (
   <View style = {style.App}> 
-    <MinMax max={20}  min ={3}/>
-    <MinMax  min ={13} max={30} />
+    <Ale min ={7} max={50}/>
+
+    {/* <MinMax max={20}  min ={3}/>
+    <MinMax  min ={13} max={30} /> */}
     {/* <CompPadrao />
     <Comp1 />
     <Comp2 />
