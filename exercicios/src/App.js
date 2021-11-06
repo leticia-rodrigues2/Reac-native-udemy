@@ -2,7 +2,8 @@ import { PATTERNLIKE_TYPES, whileStatement } from "@babel/types"
 import React from "react"
 import {View,StyleSheet} from 'react-native'
 
-import Contador from "./components/Contador"
+import Pai from "./components/comuDireta/Pai"
+//import Contador from "./components/Contador"
 //import Botao from "../Botao"
 //import Titulo from "./components/Titulo"
 //import Ale from './components/Aleatorio'
@@ -13,9 +14,10 @@ import Contador from "./components/Contador"
 export default () =>
 (
   <View style = {style.App}> 
-  <Contador inicial={100} passo={10}/>
-  <Contador/>
+  <Pai/>
    {/* <Botao/>
+  <Contador inicial = {100} passo = {10}/>
+  <Contador/>
    <Titulo principal = "CADASTRO PRODUTO"
       segundario="Tela de cadastro do produto"/>
     <Ale min ={7} max={50}/> 
