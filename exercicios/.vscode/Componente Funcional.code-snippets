@@ -1,0 +1,18 @@
+{
+ "Componente Funcional": {
+	 	"scope": "javascrip",
+ 		"prefix": "compfunc",
+	 	"body": [
+			"import React from 'react'",
+			"import {View,StyleSheet} from 'react-native'",
+			"import Estilo from './estilo'",
+			"",
+			"export default props => { return ( <Text style={Estolo.txtG> </Text> )",
+			"console.log()",
+		
+
+		
+			], 	
+			"description": "Log output to console"
+	 }
+}
