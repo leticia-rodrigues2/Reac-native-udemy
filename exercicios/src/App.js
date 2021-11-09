@@ -1,7 +1,11 @@
 import { PATTERNLIKE_TYPES, whileStatement } from "@babel/types"
 import React from "react"
 import {View,StyleSheet} from 'react-native'
+
 import Pai from "./components/comunicaIndireta/Pai"
+//import Pai from "./components/comuDireta/Pai"
+
+
 //import Pai from "./components/comuDireta/Pai"
 //import Contador from "./components/Contador"
 //import Botao from "../Botao"
@@ -17,7 +21,11 @@ export default () =>
   
   <Pai></Pai>
    {/* <Botao/>
+  <Pai1/>
+
   <Pai/>
+   {/* <Botao/>
+
   <Contador inicial = {100} passo = {10}/>
   <Contador/>
    <Titulo principal = "CADASTRO PRODUTO"
