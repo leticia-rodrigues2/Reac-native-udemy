@@ -2,7 +2,8 @@ import { PATTERNLIKE_TYPES, whileStatement } from "@babel/types"
 import React from "react"
 import {View,StyleSheet} from 'react-native'
 
-import ContadorV2 from './components/contador/ContadorV2'
+import Diferenciar from "./components/Diferenciar"
+//import ContadorV2 from './components/contador/ContadorV2'
 import ContadorDisplay from './components/contador/ContadorDisplay'
 
 //import Pai from "./components/comunicaIndireta/Pai"
@@ -22,9 +23,10 @@ export default () =>
 (
   <View style = {style.App}> 
 
-  <ContadorV2 />
-  
+  <Diferenciar />
+
    {/* <Botao/>
+  <ContadorV2 />
   
   <Pai></Pai>
   <Pai1/>
