@@ -2,7 +2,9 @@ import { PATTERNLIKE_TYPES, whileStatement } from "@babel/types"
 import React from "react"
 import {SafeAreaView,StyleSheet} from 'react-native'
 
-import ParImpar from "./components/ParImpar"
+import Membro from "./components/relacao/Membro"
+import Familia from './components/relacao/Famlia'
+//import ParImpar from "./components/ParImpar"
 //import Diferenciar from "./components/Diferenciar"
 //import ContadorV2 from './components/contador/ContadorV2'
 //import ContadorDisplay from './components/contador/ContadorDisplay'
@@ -24,9 +26,19 @@ export default () =>
 (
   //SafeArray = faz funvionar no android e no ios
   <SafeAreaView style = {style.App}> 
-    <ParImpar />
+    <Familia>
+      <Membro nome = "Larissa" sobrenome = "Rodrigues"/>
+      <Membro nome = "Leandro" sobrenome = "Rodrigues"/>
+      <Membro nome = "Ketelin" sobrenome = "Rodrigues"/>
+      <Membro nome = "Leticia" sobrenome = "Rodrigues"/>
+    </Familia>
+    <Familia>
+      <Membro nome= "Juliano" sobrenome = "Santana"/>
+      <Membro nome= "Pierre" sobrenome = "Santana"/>
+    </Familia>
 
    {/* <Botao/>
+    <ParImpar />
   <Diferenciar />
   <ContadorV2 />
   
