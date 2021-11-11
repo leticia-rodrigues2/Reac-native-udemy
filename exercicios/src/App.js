@@ -1,10 +1,11 @@
 import { PATTERNLIKE_TYPES, whileStatement } from "@babel/types"
 import React from "react"
-import {View,StyleSheet} from 'react-native'
+import {SafeAreaView,StyleSheet} from 'react-native'
 
-import Diferenciar from "./components/Diferenciar"
+import ParImpar from "./components/ParImpar"
+//import Diferenciar from "./components/Diferenciar"
 //import ContadorV2 from './components/contador/ContadorV2'
-import ContadorDisplay from './components/contador/ContadorDisplay'
+//import ContadorDisplay from './components/contador/ContadorDisplay'
 
 //import Pai from "./components/comunicaIndireta/Pai"
 //import Pai from "./components/comuDireta/Pai"
@@ -21,11 +22,12 @@ import ContadorDisplay from './components/contador/ContadorDisplay'
 
 export default () =>
 (
-  <View style = {style.App}> 
-
-  <Diferenciar />
+  //SafeArray = faz funvionar no android e no ios
+  <SafeAreaView style = {style.App}> 
+    <ParImpar />
 
    {/* <Botao/>
+  <Diferenciar />
   <ContadorV2 />
   
   <Pai></Pai>
@@ -45,7 +47,7 @@ export default () =>
     <Comp1 />
     <Comp2 />
     <Primeiro /> */}
-  </View> 
+  </SafeAreaView> 
 )
 const style = StyleSheet.create ({
 
