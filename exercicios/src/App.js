@@ -2,8 +2,11 @@ import { PATTERNLIKE_TYPES, whileStatement } from "@babel/types"
 import React from "react"
 import {SafeAreaView,StyleSheet} from 'react-native'
 
-import Membro from "./components/relacao/Membro"
-import Familia from './components/relacao/Famlia'
+import UsuarioLogado from './components/UsuarioLogado'
+//import If from './components/If'
+
+// import Membro from "./components/relacao/Membro"
+// import Familia from './components/relacao/Famlia'
 //import ParImpar from "./components/ParImpar"
 //import Diferenciar from "./components/Diferenciar"
 //import ContadorV2 from './components/contador/ContadorV2'
@@ -22,10 +25,17 @@ import Familia from './components/relacao/Famlia'
 // import CompPadrao, { Comp1, Comp2 } from './components/Multi'
 // import Primeiro  from './components/Primeiro'
 
-export default () =>
-(
+export default () =>(
   //SafeArray = faz funvionar no android e no ios
   <SafeAreaView style = {style.App}> 
+  
+    <UsuarioLogado usuario={{ nome: 'Gui' , email: 'gui@gui.com'}}/>
+    <UsuarioLogado usuario={{ nome: 'Bruna' , email: 'brubru@bru.com'}}/>
+    <UsuarioLogado usuario={{ nome: 'Leti' }}/>
+    <UsuarioLogado usuario={{ email: 'letileti@leti.com'}}/>
+
+   {/* 
+ 
     <Familia>
       <Membro nome = "Larissa" sobrenome = "Rodrigues"/>
       <Membro nome = "Leandro" sobrenome = "Rodrigues"/>
@@ -36,8 +46,6 @@ export default () =>
       <Membro nome= "Juliano" sobrenome = "Santana"/>
       <Membro nome= "Pierre" sobrenome = "Santana"/>
     </Familia>
-
-   {/* <Botao/>
     <ParImpar />
   <Diferenciar />
   <ContadorV2 />
