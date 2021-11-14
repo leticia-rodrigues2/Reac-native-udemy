@@ -2,7 +2,8 @@ import { PATTERNLIKE_TYPES, whileStatement } from "@babel/types"
 import React from "react"
 import {SafeAreaView,StyleSheet} from 'react-native'
 
-import FlexBoxV1 from "./components/layout/FlexBoxV1"
+import FlexBoxV2 from "./components/layout/FlexBoxV2"
+// import FlexBoxV1 from "./components/layout/FlexBoxV1"
 //import Quadrado from "./components/layout/Quadrado"
 //import DigiteSeuNome from './components/DigiteSeuNome'
 //import ListaProdutosV2 from './components/produtos/ListaProdutosV2'
@@ -34,9 +35,10 @@ export default () =>(
   <SafeAreaView style = {style.App}> 
  
   
-  <FlexBoxV1/>
+  <FlexBoxV2/>
 
    {/* 
+  <FlexBoxV1/>
   <DigiteSeuNome/>
   <ListaProdutosV2/>
     <UsuarioLogado usuario={{ nome: 'Gui' , email: 'gui@gui.com'}}/>
@@ -82,7 +84,8 @@ const style = StyleSheet.create ({
   App:{
     flexGrow: 1,
     justifyContent:"center",
-    alignItems:"center"
+    alignItems:"flex-start",
+    padding:20,
   }
 
 })
