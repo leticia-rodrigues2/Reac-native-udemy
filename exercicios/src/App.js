@@ -36,7 +36,7 @@ import Mega from "./components/mega/Mega"
 export default () =>(
   //SafeArray = faz funvionar no android e no ios
   <SafeAreaView style = {style.App}> 
-    <Mega/>
+    <Mega qtdeNumeros ={7}/>
    {/* 
     <FlexBoxV4/>
     <FlexBoxV3/>
