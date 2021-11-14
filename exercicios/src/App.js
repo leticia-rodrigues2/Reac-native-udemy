@@ -2,7 +2,8 @@ import { PATTERNLIKE_TYPES, whileStatement } from "@babel/types"
 import React from "react"
 import {SafeAreaView,StyleSheet} from 'react-native'
 
-import FlexBoxV2 from "./components/layout/FlexBoxV2"
+//import FlexBoxV2 from "./components/layout/FlexBoxV2"
+import FlexBoxV3 from "./components/layout/FlexBoxV3"
 // import FlexBoxV1 from "./components/layout/FlexBoxV1"
 //import Quadrado from "./components/layout/Quadrado"
 //import DigiteSeuNome from './components/DigiteSeuNome'
@@ -34,10 +35,10 @@ export default () =>(
   //SafeArray = faz funvionar no android e no ios
   <SafeAreaView style = {style.App}> 
  
-  
-  <FlexBoxV2/>
+    <FlexBoxV3/>
 
    {/* 
+  <FlexBoxV2/>
   <FlexBoxV1/>
   <DigiteSeuNome/>
   <ListaProdutosV2/>
