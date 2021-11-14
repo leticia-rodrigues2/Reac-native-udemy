@@ -1,8 +1,8 @@
 import { PATTERNLIKE_TYPES, whileStatement } from "@babel/types"
 import React from "react"
 import {SafeAreaView,StyleSheet} from 'react-native'
-
-import UsuarioLogado from './components/UsuarioLogado'
+import ListaProdutos from './components/produtos/ListaProdutos'
+//import UsuarioLogado from './components/UsuarioLogado'
 //import If from './components/If'
 
 // import Membro from "./components/relacao/Membro"
@@ -29,12 +29,13 @@ export default () =>(
   //SafeArray = faz funvionar no android e no ios
   <SafeAreaView style = {style.App}> 
   
+  <ListaProdutos />
+
+   {/* 
     <UsuarioLogado usuario={{ nome: 'Gui' , email: 'gui@gui.com'}}/>
     <UsuarioLogado usuario={{ nome: 'Bruna' , email: 'brubru@bru.com'}}/>
     <UsuarioLogado usuario={{ nome: 'Leti' }}/>
     <UsuarioLogado usuario={{ email: 'letileti@leti.com'}}/>
-
-   {/* 
  
     <Familia>
       <Membro nome = "Larissa" sobrenome = "Rodrigues"/>
