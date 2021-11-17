@@ -5,6 +5,5 @@ export default  StyleSheet.create({
     fontSize:32,
     textAlign: "center",
     color: '#42173d',
-    backgroundColor:'#bd69b2a6' , 
   }
 })
